@@ -65,7 +65,7 @@
 	// FUNCTIONS
 	function init(){
 		// initialize some globals
-		socket = io('http://localhost:3010');
+		socket = io();
 		socket.on('mouse', newDrawing);
 
 		canvas = document.querySelector('#mainCanvas');
